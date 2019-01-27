@@ -1,0 +1,7 @@
+Create Device class (Device)
+Create subclass (BulbDevice)
+Properties: On/off, schedule, timer
+Create class DeviceManager 
+
+Language: Python
+OOP 

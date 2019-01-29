@@ -5,34 +5,55 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple App.
+ *Tests to see that the class "promptString" doesnt return with a null identifier
+ *
  */
-public class AppTest 
-    extends TestCase
+public class ScheduleManipulatorTest
+    extends ScheduleManipulator
 {
     /**
      * Create the test case
      *
      * @param testName name of the test case
      */
-    public AppTest( String testName )
+     
+    public ScheduleManipulatorrTest( String EventHandlerManipulatorrTest )
     {
-        super( testName );
+       assertNotNull(["This is not null",] reader)
+       assertNotNull(["This is not null",] taskManager)
+       assertNotNull(["This is not null",] deviceManager)
+        super(EventHandlerManipulatorrTest);
     }
-
-    /**
-     * @return the suite of tests being tested
-     */
+    
+        public removeTaskTest( String removeTaskTest )
+    {
+       assertNotNull(["This is not null",] id)
+        super(removeTaskTest);
+    }
+    
+    public addTaskTest( String addTaskTest)
+    
+    {
+       assertNotNull(["This is not null",] name)
+       assertNotNull(["This is not null",] dateString)
+       assertNotNull(["This is not null",] initialDate)
+        super(addTaskTest);
+    }
+    
+        public runTest( String runTest )
+    {
+       assertNotNull(["This is not null",] n)
+        super(runTest);
+    }
     public static Test suite()
     {
-        return new TestSuite( AppTest.class );
+        return new TestSuite( AbstractTest.class );
     }
 
     /**
-     * Rigourous Test :-)
+     * Rigourous Test 
      */
-    public void testApp()
+    public void AbstractTest()
     {
-        assertTrue( true );
+        assertTrue(true);
     }
-}

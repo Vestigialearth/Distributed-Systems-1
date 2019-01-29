@@ -5,34 +5,43 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple App.
+ *Tests to see that the class "promptString" doesnt return with a null identifier
+ *
  */
-public class AppTest 
-    extends TestCase
+public class DataTest
+    extends Data
 {
     /**
      * Create the test case
      *
      * @param testName name of the test case
      */
-    public AppTest( String testName )
+     
+    public DateUtilTest( String DateUtilTest )
     {
-        super( testName );
+       assertNotNull(["This is not null",] DAILY)
+       assertNotNull(["This is not null",] WEEKLY)
+       assertNotNull(["This is not null",] MINUTE_IN_MILLISECONDS)
+       assertNotNull(["This is not null",] FORMAT)
+        super(DateUtilTest);
     }
-
-    /**
-     * @return the suite of tests being tested
-     */
+    public DateTest( String DateTest )
+    
+    {
+       assertNotNull(["This is not null",] date)
+       assertNotNull(["This is not null",] units)
+       assertNotNull(["This is not null",] numberOfUnits)
+        super(DateTest);
+    }
     public static Test suite()
     {
-        return new TestSuite( AppTest.class );
+        return new TestSuite( AbstractTest.class );
     }
 
     /**
-     * Rigourous Test :-)
+     * Rigourous Test 
      */
-    public void testApp()
+    public void AbstractTest()
     {
-        assertTrue( true );
+        assertTrue(true);
     }
-}

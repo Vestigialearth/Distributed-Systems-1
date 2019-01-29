@@ -5,19 +5,34 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple App.
+ *Tests to see that the class "promptString" doesnt return with a null identifier
+ *
  */
-public class AppTest 
-    extends TestCase
+public class AbstractTest
+    extends Abstract
 {
     /**
      * Create the test case
      *
      * @param testName name of the test case
      */
-    public AppTest( String testName )
+    public promptStringTest( String promptStringTest )
     {
-        super( testName );
+       assertNotNull(["This is not null",] toggleName)
+        super(promptStringTest);
+    }
+    
+        public promptOneFromManyTest( String promptOneFromManyTest)
+    {
+       assertNotNull(["This is not null",] input)
+        super(promptOneFromManyTest);
+    }
+    
+        public matchFirstIntegerTest( String matchFirstIntegerTest)
+    {
+       assertNotNull(["This is not null",] m);
+       assertNotNull(["This is not null",] id);
+       super(matchFirstIntegerTest);
     }
 
     /**
@@ -25,14 +40,14 @@ public class AppTest
      */
     public static Test suite()
     {
-        return new TestSuite( AppTest.class );
+        return new TestSuite( AbstractTest.class );
     }
 
     /**
-     * Rigourous Test :-)
+     * Rigourous Test 
      */
-    public void testApp()
+    public void AbstractTest()
     {
-        assertTrue( true );
+        assertTrue(true);
     }
 }
